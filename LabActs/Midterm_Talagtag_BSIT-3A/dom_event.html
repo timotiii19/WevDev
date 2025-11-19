@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Event Challenge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, button {
+      margin: 8px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>DOM Event Challenge</h1>
+
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Enter your name" required><br>
+    <input type="email" id="email" placeholder="Enter your email" required><br>
+    <label>Favorite Color:</label>
+    <input type="color" id="favColor"><br>
+    <label>Birthday:</label>
+    <input type="date" id="birthday"><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <button id="changeBgBtn">Change Background Color</button>
+
+  <script src="dom_event.js"></script>
+</body>
+</html>

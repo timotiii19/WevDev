@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+
+        <!-- Text and Password -->
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username" size="20" maxlength="15"><br><br>
+
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" size="20" maxlength="12"><br><br>
+
+        <!-- Added Fields -->
+        <label for="email">Enter Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="birthday">Enter Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+        <label for="phonenumber">Enter Phone #:</label>
+        <input type="tel" id="phonenumber" name="phonenumber"><br><br>
+
+        <!-- Textarea -->
+        <label for="about">Tell us about yourself:</label><br>
+        <textarea id="about" name="about" rows="4" cols="40"></textarea><br>
+
+        <!-- Checkbox -->
+        <p>Choose your hobbies:</p>
+        <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+        <input type="checkbox" name="hobby" value="Sports"> Sports<br>
+        <input type="checkbox" name="hobby" value="Music"> Music<br>
+
+        <!-- Radio Button -->
+        <p>Choose your gender:</p>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <!-- Select Dropdown -->
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+            <option value="Philippines">Philippines</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+            <option value="USA">USA</option>
+            <option value="Switzerland">Switzerland</option>
+        </select><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="reset" value="Clear Form">
+
+    </form>
+</body>
+</html>

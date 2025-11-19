@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Portfolio</title>
+  <link rel="stylesheet" href="task7.css">
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Profile Section -->
+    <section id="profile">
+      <h1>Hi, I'm Zion Talagtag</h1>
+      <h2>Web Developer & Designer</h2>
+      <img src="profile.jpg" alt="Profile Image" class="profile-img">
+      <p>Passionate about creating interactive web experiences and learning new technologies.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here you can showcase your projects.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <script src="task7.js"></script>
+</body>
+</html>

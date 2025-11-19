@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<fieldset>
+<legend>HTML 3</legend>
+<form>
+<label>What type of animal is Kuya Kim's favorite pet?</label><br>
+<input type="radio" id="Likes_Cat" name="Favorite_Pet" value="Cat">
+<label for="Likes_Cat">Cat</label>
+<input type="radio" id="Likes_Dog" name="Favorite_Pet" value="Dog">
+<label for="Likes_Dog">Dog</label>
+<input type="radio" id="Likes_Fish" name="Favorite_Pet" value="Fish">
+<label for="Likes_Fish">Fish</label>
+<input type="radio" id="Likes_Bird" name="Favorite_Pet" value="Bird">
+<label for="Likes_Bird">Bird</label>
+<input type="radio" id="Likes_Snake" name="Favorite_Pet" value="Snake">
+<label for="Likes_Snake">Snake</label><br><br>
+<input type="reset" value="Clear All">
+</form>
+</fieldset>

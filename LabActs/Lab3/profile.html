@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page - Timothy A. Talagtag</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <center>
+      <h1 data-role="student">My Profile Page</h1>
+      <p>BSIT 3A - Laboratory Activity 3 - Timothy A. Talagtag </p>
+    </center>
+  </header>
+
+  <hr>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <center>
+      <a href="#bio">Bio</a> |
+      <a href="#hobbies">Hobbies</a> |
+      <a href="#contact">Contact</a> |
+      <a href="#extra">More</a>
+    </center>
+  </nav>
+
+  <hr>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    
+      <!-- Responsive Profile Image -->
+    <section>
+      <h2>Profile</h2>
+      <aside>
+      <picture>
+        <source srcset="me.jpg" media="(orientation: landscape)">
+        <source srcset="me.jpg" media="(orientation: portrait)">
+        <img src="me.jpg" alt="Profile picture" width="170" height="170" style="border-radius: 100px;">
+      </aside>
+      </picture>
+      
+       <!-- About me SECTION -->
+    <article id="bio" data-interest="webdev">
+        <h2>About Me </h2>
+          <p>I’m Timothy A. Talagtag, a BSIT student at TUP.
+            I’m a student who codes, learns, and occasionally pretends to know what’s going on.  
+            Future web developer… or professional deadline chaser. </p>
+    </article>
+
+     <hr>
+
+       <!-- Fun Fact right after profile -->
+        <aside>
+            <h3>Fun Fact</h3>
+            <p>I once promised myself “just 5 minutes” of break — it became 3 hours. 🕒</p>
+        </aside>
+    </section>
+
+    <hr>
+
+    <!-- HOBBIES SECTION -->
+    <section id="hobbies" data-interest="gaming,reading,coffee">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Gaming (a.k.a. “professional procrastination”)</li>
+          <li>Listening to music (loud enough to ignore responsibilities)</li>
+          <li>Drinking coffee at 11 PM and regretting it at 3 AM</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <p>
+            <label>Email:<br>
+              <input type="email" name="email" placeholder="Enter your email" required>
+            </label>
+          </p>
+          <p>
+            <label>Phone:<br>
+              <input type="tel" name="phone" placeholder="09XX-XXX-XXXX" pattern="[0-9]{11}" required>
+            </label>
+          </p>
+          <p>
+            <label>Date of Birth:<br>
+              <input type="date" name="birthday" required>
+            </label>
+          </p>
+          <p>
+            <label>Favorite Color:<br>
+              <input type="color" name="fav-color" value="#0000ff">
+            </label>
+          </p>
+          <p>
+            <label>Message:<br>
+              <textarea name="message" rows="4" placeholder="Your message here..."></textarea>
+            </label>
+          </p>
+          <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- EXTRA INFO WITH COLLAPSIBLE DETAILS -->
+    <section id="extra">
+        <h2>More Info</h2>
+        <details>
+          <summary>My Achievements 🎓</summary>
+          <p>🏆 Survived all-nighters before exams</p>
+          <p>🥤 Consumed record-breaking cups of coffee</p>
+          <p>📜 Certified “Deadline Beater” (barely)</p>
+        </details>
+      </section>
+
+        <br>
+        
+      <section>
+        <!-- EMBEDDED VIDEO -->
+        <h3>Favorite Video</h3>
+        <iframe width="300" height="200" 
+                src="https://www.youtube.com/embed/0pB1wr4_PnQ" 
+                title="Funny Video" frameborder="0" allowfullscreen>
+        </iframe>
+    </section>
+
+    <hr>
+
+      <!-- ASIDE -->
+    <aside>
+        <h2>Quick Note</h2>
+        <p>This page was built for my lab activity 3. 100% HTML5, 0% stress (maybe a little..).</p>
+    </aside>
+
+  </main>
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Connect with me:</p>
+    <ul>
+      <li><a href="https://www.facebook.com/Timotiiiii19" target="_blank">Facebook</a></li>
+      <li><a href="https://www.tiktok.com/@inumakiiiii9" target="_blank">TikTok</a></li>
+      <li><a href="https://www.instagram.com/n.cht__/" target="_blank">Instagram</a></li>
+    </ul>
+    <p>&copy; 2025 BSIT 3A</p>
+  </footer>
+
+</body>
+</html>

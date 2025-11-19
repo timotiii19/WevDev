@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page - Timothy A. Talagtag</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style_Talagtag.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🌐 MyProfile</div>
+    <nav>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#extra">More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PROFILE + SIDEBAR -->
+  <section id="bio" class="card">
+    <img src="me.jpg" alt="Profile picture">
+    <article>
+      <h1>Timothy A. Talagtag</h1>
+      <p>BSIT 3A - Laboratory Activity 4</p>
+      <h2>About Me</h2>
+      <p>I’m Timothy A. Talagtag, a BSIT student at TUP.
+      I’m a student who codes, learns, and occasionally pretends to know what’s going on.  
+      Future web developer… or professional deadline chaser.</p>
+    </article>
+    <aside>
+      <h3>Fun Fact</h3>
+      <p>I once promised myself “just 5 minutes” of break — it became 5 hours. 🕒</p>
+    </aside>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies" class="card">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Gaming (professional procrastination)</li>
+      <li>Listening to music 🎶</li>
+      <li>Drinking coffee at 11 PM ☕</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Email:
+        <input type="email" name="email" placeholder="Enter your email" required>
+      </label>
+      <label>Phone:
+        <input type="tel" name="phone" placeholder="09XX-XXX-XXXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+      </label>
+      <label>Date of Birth:
+        <input type="date" name="birthday" required>
+      </label>
+      <label>Favorite Color:
+        <input type="color" name="fav-color" value="#0000ff">
+      </label>
+      <label>Message:
+        <textarea name="message" rows="4" placeholder="Your message here..."></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- EXTRA INFO -->
+  <section id="extra" class="card">
+    <h2>More Info</h2>
+    <details>
+      <summary>My Achievements 🎓</summary>
+      <p>🏆 Survived all-nighters before exams</p>
+      <p>🥤 Consumed record-breaking cups of coffee</p>
+      <p>📜 Certified “Deadline Beater” (barely)</p>
+    </details>
+  </section>
+
+  <!-- VIDEO -->
+<section id="video" class="card">
+  <h2>Favorite Video</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/0pB1wr4_PnQ" title="Favorite Video" allowfullscreen></iframe>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://www.facebook.com/Timotiiiii19" target="_blank">📘</a>
+    <a href="https://www.tiktok.com/@inumakiiiii9" target="_blank">🎵</a>
+    <a href="https://www.instagram.com/n.cht__/" target="_blank">📸</a>
+    <p>&copy; 2025 BSIT 3A</p>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navUl = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+      navUl.classList.toggle("showing");
+    });
+  </script>
+
+</body>
+</html>

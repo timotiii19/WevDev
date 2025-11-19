@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laboratory Activity 7 - Using your file's code</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width:900px; margin:20px auto; padding:10px; }
+    section { border:1px solid #ddd; padding:12px; margin-bottom:14px; border-radius:8px; }
+    input[type="number"], input[type="text"]{ padding:6px; width:160px; margin-right:8px; }
+    button { padding:6px 10px; margin:4px; cursor:pointer; }
+    #result { margin-top:8px; font-weight:600; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Laboratory Activity 7</h1>
+  </header>
+
+  <!-- Task 1: Display & Variables (matches lab's use of alert, console.log, document.write/innerHTML) -->
+  <section>
+    <h2>Task 1 — Display & Variables</h2>
+    <p id="pageInfo"></p>
+  </section>
+
+  <!-- Task 2: Calculator (uses parseFloat as in the file) -->
+  <section>
+    <h2>Task 2 — Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <br/>
+    <button id="addBtn">Add</button>
+    <button id="subBtn">Subtract</button>
+    <button id="mulBtn">Multiply</button>
+    <button id="divBtn">Divide</button>
+    <div id="result">Result: —</div>
+  </section>
+
+  <!-- Task 3: Background Color Changer -->
+  <section>
+    <h2>Task 3 — Change Background Color</h2>
+    <button id="colorBtn">Change Background</button>
+    <p id="colorHex"></p>
+  </section>
+
+  <!-- Task 4: Event Handling (Form). These IDs match code snippets in your file. -->
+  <section>
+    <h2>Task 4 — Event Handling (Form)</h2>
+    <form id="sampleForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <script src="script(1).js"></script>
+</body>
+</html>

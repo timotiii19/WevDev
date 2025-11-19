@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<fieldset>
+<legend>HTML 5</legend>
+<form>
+<label for="Philippine_Islands"><b>Philippine Islands</b></label><br>
+<select id="Philippine_Islands" name="Philippine_Islands">
+<option value="" disabled selected>Select Province</option>
+<optgroup label="Luzon">
+<option value="Bulacan">Bulacan</option>
+<option value="Laguna">Laguna</option>
+<option value="Ilocos">Ilocos</option>
+<option value="Batangas">Batangas</option>
+<option value="Bataan">Bataan</option>
+<option value="Isabela">Isabela</option>
+<option value="Pampanga">Pampanga</option>
+</optgroup>
+<optgroup label="Visayas">
+<option value="Iloilo">Iloilo</option>
+<option value="Aklan">Aklan</option>
+<option value="Leyte">Leyte</option>
+<option value="Samar">Samar</option>
+<option value="Negros">Negros</option>
+<option value="Cebu">Cebu</option>
+<option value="Bohol">Bohol</option>
+</optgroup>
+<optgroup label="Mindanao">
+<option value="Davao">Davao</option>
+<option value="Cotabato">Cotabato</option>
+<option value="Maguindanao">Maguindanao</option>
+<option value="Bukidnon">Bukidnon</option>
+<option value="Lanao">Lanao</option>
+<option value="Agusan">Agusan</option>
+<option value="Misamis">Misamis</option>
+</optgroup>
+</select><br><br>
+<input type="reset" value="Clear All">
+</form>
+</fieldset>

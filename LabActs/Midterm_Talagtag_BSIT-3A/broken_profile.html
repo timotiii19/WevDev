@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timothy Talagtag - Profile</title>
+  <meta name="description" content="Profile page of Timothy Talagtag, an IT student passionate about web development and technology." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Timothy Talagtag</h1>
+    <nav>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bio" aria-labelledby="bio-heading">
+      <h2 id="bio-heading">Bio</h2>
+
+      <article>
+        <p>
+          I am an IT Student.
+        </p>
+
+        <picture>
+          <!-- Source 1: Instagram image for large screens -->
+          <source
+            srcset="https://instagram.fmnl17-1.fna.fbcdn.net/v/t51.2885-19/572890100_18032420054718540_418511915512015841_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44MjAuYzIifQ&_nc_ht=instagram.fmnl17-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2QFfhY0hF1kuBBlrjl4jSZE3NkVaVbI5lPphbdHzD2hGYVR4ZwRbjN9TUafaQ9H2Xhk&_nc_ohc=jddEV2a0T78Q7kNvwELQ8Ep&_nc_gid=M4Pq81EgA2IZXwwjENCWGw&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_AfeDzt9-PeBXrNB4cii-qHNY_sZL-8QCOvECh2tKmSuY2g&oe=69051E75&_nc_sid=7d3ac5"
+            media="(min-width: 700px)">
+          
+          <!-- Source 2: Cat image for smaller screens -->
+          <source
+            srcset="https://media.4-paws.org/d/2/5/f/d25ff020556e4b5eae747c55576f3b50886c0b90/cut%20cat%20serhio%2002-1813x1811-720x719.jpg"
+            media="(max-width: 699px)">
+
+          <!-- Fallback image (also used by browsers that ignore <source>) -->
+          <img
+            src="https://media.4-paws.org/d/2/5/f/d25ff020556e4b5eae747c55576f3b50886c0b90/cut%20cat%20serhio%2002-1813x1811-720x719.jpg"
+            alt="Profile photo of Timothy Talagtag"
+            class="profile-image" />
+        </picture>
+
+        <details>
+          <summary>Achievement</summary>
+          <p>Certified “Deadline Beater” – Consistently delivers quality work under tight deadlines.</p>
+        </details>
+      </article>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Watching</li>
+        <li>Playing</li>
+      </ul>
+    </section>
+
+    <aside id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <form>
+        <label>
+          Email:
+          <input type="email" placeholder="Email" required />
+        </label>
+        <br />
+        <label>
+          Phone (Optional):
+          <input type="tel" placeholder="Phone (Optional)" />
+        </label>
+        <br />
+        <input type="submit" value="Send Message" />
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Timothy Talagtag. Connect with me!</p>
+  </footer>
+</body>
+</html>

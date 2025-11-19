@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laboratory 7 - JavaScript</title>
+
+  <!-- Nice modern font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style_TALAGTAG.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="title">
+        <h1>JavaScript Lab — Activity 7</h1>
+        <p class="subtitle">Display & Variables · Calculator · DOM · Events</p>
+      </div>
+      <div class="meta">
+        <span class="pill">Lab 7</span>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- Task 1 -->
+      <section class="card" id="task1-card">
+        <div class="card-head">
+          <h2>Task 1 — Display & Variables</h2>
+        </div>
+        <p id="pageInfo" class="muted"></p>
+      </section>
+
+      <!-- Task 2 -->
+      <section class="card" id="task2-card">
+        <div class="card-head">
+          <h2>Task 2 — Simple Calculator</h2>
+        </div>
+
+        <div class="form-row">
+          <input type="number" id="num1" placeholder="First number" />
+          <input type="number" id="num2" placeholder="Second number" />
+        </div>
+
+        <div class="btn-row">
+          <button class="btn primary" onclick="add()">Add</button>
+          <button class="btn primary" onclick="subtract()">Subtract</button>
+          <button class="btn primary" onclick="multiply()">Multiply</button>
+          <button class="btn primary" onclick="divide()">Divide</button>
+          <button class="btn secondary" onclick="document.getElementById('num1').value='';document.getElementById('num2').value='';document.getElementById('result').textContent='Result: —'">Clear</button>
+        </div>
+
+        <div id="result" class="result">Result: —</div>
+      </section>
+
+      <!-- Task 3 -->
+      <section class="card" id="task3-card">
+        <div class="card-head">
+          <h2>Task 3 — Change Background</h2>
+        </div>
+
+        <div class="form-row">
+          <button id="colorBtn" class="btn accent">Change Background</button>
+          <div id="colorHex" class="muted">Current: —</div>
+        </div>
+      </section>
+
+      <!-- Task 4 -->
+      <section class="card" id="task4-card">
+        <div class="card-head">
+          <h2>Task 4 — Event Handling (Form)</h2>
+        </div>
+
+        <form id="sampleForm" class="form-row" novalidate>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <button type="submit" class="btn primary">Submit</button>
+        </form>
+
+        <p id="message" class="message" aria-live="polite"></p>
+      </section>
+    </main>
+  </div>
+
+  <!-- script.js -->
+  <script src="script_TALAGTAG.js"></script>
+</body>
+</html>

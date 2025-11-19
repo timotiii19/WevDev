@@ -1,0 +1,74 @@
+<!-- TALAGTAG, TIMOTHY A. -->
+<!-- BSIT-3A. -->
+<!-- Quick JavaScript Quiz -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .quiz-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      width: 340px;
+      margin: auto;
+      box-shadow: 0 3px 8px rgba(31, 91, 210, 0.825);
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      margin-top: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      background: #5481d4;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4a8fd4;
+    }
+
+    #feedback {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+
+  <script src="script_Talagtag.js" defer></script>
+</head>
+
+<body>
+  <div class="quiz-box">
+    <h2>Simple JavaScript Quiz</h2>
+
+    <p>What is the result of: <strong>2 + "2"</strong> ?</p>
+
+    <input type="text" id="answer" placeholder="Enter your answer...">
+
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="feedback"></p>
+  </div>
+</body>
+</html>

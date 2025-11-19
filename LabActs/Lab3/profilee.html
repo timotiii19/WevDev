@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page - BSIT 3A</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1 data-role="student">My Profile Page</h1>
+    <p>BSIT 3A - Laboratory Activity 3</p>
+  </header>
+
+  <hr>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#bio">Bio</a> |
+    <a href="#hobbies">Hobbies</a> |
+    <a href="#contact">Contact</a> |
+    <a href="#extra">More</a>
+  </nav>
+
+  <hr>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    
+    <!-- Responsive Profile Image -->
+    <section>
+      <h2>About Me</h2>
+      <picture>
+        <source srcset="cat.jpg" media="(min-width: 800px)">
+        <source srcset="cat.jpg" media="(min-width: 500px)">
+        <img src="cat.jpg" alt="Profile picture" width="250">
+      </picture>
+    </section>
+
+    <hr>
+
+    <!-- BIO SECTION -->
+  <article id="bio" data-interest="webdev">
+      <h2>Bio</h2>
+      <p>I’m a BSIT student (and a cat).  
+      I code (and nap), debug (and bite wires),  
+      and dream of becoming a web develo-purr…  
+      or maybe just the Destroyer of Anything... </p>
+  </article>
+
+
+    <hr>
+
+    <!-- HOBBIES SECTION -->
+    <section id="hobbies" data-interest="Eating,Biting,Scratching,Sleeping">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Eating</li>
+        <li>Biting</li>
+        <li>Napping</li>
+        <li>Scratching</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+      <h2>Contact Me-ow!</h2>
+      <form>
+        <p>
+          <label>Email:<br>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </label>
+        </p>
+        <p>
+          <label>Phone:<br>
+            <input type="tel" name="phone" placeholder="09XX-XXX-XXXX" pattern="[0-9]{11}" required>
+          </label>
+        </p>
+        <p>
+          <label>Meeting Date:<br>
+            <input type="date" name="meeting-date" required>
+          </label>
+        </p>
+        <p>
+          <label>Favorite Color:<br>
+            <input type="color" name="fav-color" value="#0000ff">
+          </label>
+        </p>
+        <p>
+          <label>Message:<br>
+            <textarea name="message" rows="4" placeholder="Your message here..."></textarea>
+          </label>
+        </p>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- EXTRA INFO WITH COLLAPSIBLE DETAILS -->
+    <section id="extra">
+      <h2>More Info</h2>
+      <details>
+        <summary>Achievements & Certifications</summary>
+        <p>🏅 Top Napper</p>
+        <p>📜 Food Stealer</p>
+        <p>📜 Top 1 for Scratching Furnitures</p>
+      </details>
+
+      <br>
+
+      <!-- EMBEDDED VIDEO -->
+      <h3>Favorite Video </h3>
+      <iframe width="300" height="300" 
+              src="https://www.youtube.com/embed/0pB1wr4_PnQ" 
+              title="Funny Cat Video" frameborder="0" allowfullscreen>
+      </iframe>
+    </section>
+
+    <hr>
+
+    <!-- ASIDE -->
+    <aside>
+      <h2>Quick Note</h2>
+      <p>This page is built using semantic HTML5, responsive features, and interactive elements.</p>
+    </aside>
+
+  </main>
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Connect with me (or send me snacks):</p>
+    <ul>
+      <li><a href="https://www.facebook.com/Timotiiiii19" target="_blank">Meowbook</a></li>
+      <li><a href="https://www.tiktok.com/@inumakiiiii9" target="_blank">CatTok</a></li>
+      <li><a href="https://www.instagram.com/n.cht__/" target="_blank">Meowstagram</a></li>
+    </ul>
+    <p>&copy; 2025 BSIT 3A</p>
+  </footer>
+
+</body>
+</html>
